@@ -32,7 +32,8 @@ void main() {
       final l = nueva()
         ..alEvento(compra(lunes, 5600))
         ..alEvento(viaje(lunes, 8300));
-      expect(l.puntos('u1'), 5 + 8);
+      // 5 + 8 por gasto, +50 de bono: comercio y transporte son 2 servicios distintos en la misma semana.
+      expect(l.puntos('u1'), 5 + 8 + 50);
     });
     test('un evento repetido NO premia dos veces (idempotencia por id)', () {
       final l = nueva();
