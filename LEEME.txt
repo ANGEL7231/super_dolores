@@ -1,0 +1,18 @@
+SUPER DOLORES - cómo ponerla a funcionar
+========================================
+
+1) Crea el proyecto (si aún no lo tienes). El nombre DEBE ser super_dolores:
+     flutter create super_dolores
+
+2) Copia DENTRO de la carpeta super_dolores y acepta REEMPLAZAR:
+     lib\          (completa)
+     test\         (completa; trae un widget_test.dart nuevo que sustituye al del contador)
+     pubspec.yaml
+
+3) En la terminal, dentro de super_dolores:
+     flutter pub get
+     flutter test          (deben pasar todas)
+     flutter run           (con el emulador abierto)
+
+No usa paquetes externos ni permisos especiales: todo es Dart puro y simulado.
+Es una simulación didáctica: no mueve dinero real.
